@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color:#222;">
   <head>
     <meta charset="utf-8">
     <title>Brandon LaDuke</title>
@@ -19,8 +19,21 @@
       })();
       console.log("Web components ready!");
     </script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
-  <body>
+  <body id="body" class="">
 
+    <header>
+      <h1>Hello World</h1>
+    </header>
+    <nav>
+      
+    </nav>
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById("body").classList.add("show");
+      }
+    </script>
   </body>
 </html>
