@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Brandon LaDuke</title>
+    <script>
+      // load webcomponents polyfills
+      (function() {
+        if ('registerElement' in document
+            && 'import' in document.createElement('link')
+            && 'content' in document.createElement('template')) {
+          // browser has web components
+        } else {
+          // polyfill web components
+          var e = document.createElement('script');
+          e.src = '/bower_components/webcomponentsjs/webcomponents-lite.min.js';
+          document.head.appendChild(e);
+        }
+      })();
+      console.log("Web components ready!");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

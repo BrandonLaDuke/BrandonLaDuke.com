@@ -1,0 +1,25 @@
+{
+  "name": "BrandonLaDuke.com",
+  "homepage": "http://BrandonLaDuke.com",
+  "authors": [
+    "Brandon LaDuke <bjldbjld@gmail.com>"
+  ],
+  "description": "My Website",
+  "main": "index.html",
+  "keywords": [
+    "Brandon",
+    "LaDuke",
+    "Web",
+    "Developer",
+    "Designer",
+    "Photographer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
