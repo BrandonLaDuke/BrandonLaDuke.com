@@ -1,19 +1,33 @@
 :root {
   /* Colors */
-  --toolbar-color: ;
+  --toolbar-color: #0006c3;
+  --toolbar-link-color: #3636ff;
   --bkg-color: #222;
   --text-color: #ffffff;
   --link-color: orange;
   --highlight-color: red;
 }
 
+/* Styles to prevent FOUC */
+html {
+  background-color: var(--bkg-color);
+}
 body {
   background-color: var(--bkg-color);
   color: var(--text-color);
   opacity: 0;
+  -webkit-transition-delay: 1s;
   transition-delay: 1s;
+  font-family: sans-serif;
 }
-
+@-webkit-keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes load {
   0% {
     opacity: 0;
@@ -23,7 +37,109 @@ body {
   }
 }
 .show {
-  animation-name: load;
-  animation-duration: 1000ms;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: load;
+          animation-name: load;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
+
+/* Toolbar Styles */
+app-toolbar {
+  background-color: var(--toolbar-color);
+  overflow:hidden;
+}
+app-toolbar a {
+  color: var(--text-color);
+  background-color: var(--toolbar-color);
+  padding: 21px 10px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  text-decoration: none;
+}
+app-toolbar a:hover {
+  background-color: var(--toolbar-link-color);
+}
+@media screen and (max-width:730px) {
+  app-toolbar [pages] {
+    display: none;
+  }
+}
+
+/* Drawer Styles */
+app-drawer a {
+  display:block;
+  padding:15px 0 15px 20px;
+  margin-bottom:2px;
+  text-decoration:none;
+  color: var(--text-color);
+}
+app-drawer #contentContainer {
+  background-color: var(--bkg-color);
+  border-right:var(--toolbar-color) 3px solid;
+}
+
+/* Header Styles */
+header [container] {
+  margin: 0 10px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  display: flex;
+  flex-wrap: wrap;
+}
+header #Logo {
+  width:100%;
+}
+@media screen and (max-width: 899px) {
+  header #Logo {
+    width:150px;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header [heading] {
+    text-align: center;
+    margin:auto;
+  }
+  header [heading] h1 {
+    font-size:1.8em;
+    font-family:monospace;
+    margin:20px 0;
+  }
+  header [heading] h3 {
+    font-size: 1.1em;
+    font-family:monospace;
+    margin:auto;
+  }
+}
+@media screen and (max-width:500px) {
+  header #Logo {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  header [container] {
+    margin: 20px 100px 0 180px;
+    height: 300px;
+  }
+  header #Logo {
+    flex:1;
+    width: 41px;
+  }
+  header [heading] {
+    flex: 2;
+    margin-top:70px;
+  }
+  header [heading] h1 {
+    font-size:3.8em;
+    font-family:monospace;
+    margin:20px 0;
+  }
+  header [heading] h3 {
+    font-size: 2.26em;
+    font-family:monospace;
+  }
+}
+
+/* About Page Styles*/
