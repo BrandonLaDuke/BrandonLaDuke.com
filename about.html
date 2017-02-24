@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html style="background-color:#222;">
+  <head>
+    <meta charset="utf-8">
+    <title>Brandon LaDuke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="bower_components/app-layout/app-layout.html">
+    <link rel="import" href="bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+    <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+    <script>
+      // load webcomponents polyfills
+      (function() {
+        if ('registerElement' in document
+            && 'import' in document.createElement('link')
+            && 'content' in document.createElement('template')) {
+          // browser has web components
+        } else {
+          // polyfill web components
+          var e = document.createElement('script');
+          e.src = '/bower_components/webcomponentsjs/webcomponents-lite.min.js';
+          document.head.appendChild(e);
+        }
+      })();
+      console.log("Web components ready!");
+    </script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body id="body" class="">
+    <app-drawer-layout force-narrow fullbleed>
+      <app-drawer swipe-open>
+        <app-toolbar>Menu</app-toolbar>
+        <a href="about.html">About</a>
+        <a href="web.html">Web</a>
+        <a href="video.html">Video</a>
+        <a href="photography.html">Photography</a>
+        <a href="http://blog.brandonladuke.com">Blog</a>
+      </app-drawer>
+      <app-header-layout has-scrolling-region>
+        <app-header condenses reveals effects="waterfall">
+          <app-toolbar>
+            <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+            <div title><a href="/">Brandon LaDuke</a></div>
+            <div pages spacer>
+              <a href="about.html">About</a>
+              <a href="web.html">Web</a>
+              <a href="video.html">Video</a>
+              <a href="photography.html">Photography</a>
+              <a href="http://blog.brandonladuke.com">Blog</a>
+            </div>
+          </app-toolbar>
+          <!-- Start Content -->
+
+          <header>
+            <div class="container aboutHeader">
+              <h1>About Me</h1>
+            </div>
+          </header>
+          <div class="card">
+            <div class="bio">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel magna nulla. Phasellus tincidunt metus vitae vulputate pellentesque. Cras neque urna, volutpat vel urna eu, bibendum blandit nibh. Pellentesque ante purus, aliquet a tortor nec, rhoncus cursus ex. Pellentesque accumsan nisl sit amet est venenatis, id euismod orci sagittis. Praesent pulvinar lobortis luctus. Mauris ipsum tortor, molestie at turpis in, convallis pharetra elit. Cras ac hendrerit diam. Aenean ornare nisi ante, in tempor felis vehicula non. Morbi ut nunc ultricies, faucibus nisi eget, varius justo. Mauris laoreet augue nec augue finibus, sed sagittis ante mollis. Donec est justo, pharetra non porta sed, luctus at felis. Sed vel nisl eget nunc convallis iaculis pharetra vel dolor. Donec vestibulum posuere felis, eu fringilla mauris malesuada vitae. Pellentesque eu consequat magna, vitae congue tellus. Quisque ipsum tortor, ultrices at euismod sed, interdum vel eros.</p>
+              <p>Aliquam eu lectus vehicula, rutrum massa a, dictum ipsum. Proin vestibulum neque in lectus semper faucibus. Quisque blandit, nisi vitae laoreet blandit, urna enim blandit metus, nec tempor lorem ex vel purus. Aliquam vel mi tempor, suscipit odio nec, rutrum purus. Curabitur aliquam a arcu a imperdiet. Sed ornare pellentesque posuere. Duis venenatis elit ut neque porta placerat. Aliquam id porta tellus, vitae dignissim nunc. Nunc in imperdiet orci. Suspendisse eu iaculis orci, at accumsan eros. Nunc sit amet porta metus.</p>
+              <p>Aliquam eleifend quam risus, nec ullamcorper felis egestas sit amet. Curabitur consectetur justo nec tortor euismod, ut aliquet justo venenatis. Praesent dapibus eleifend dolor, a finibus arcu varius ut. In consequat at lacus eu tincidunt. Maecenas suscipit efficitur elit, in sagittis magna semper sed. Sed laoreet mi sit amet lectus pellentesque, non scelerisque libero interdum. Vestibulum elementum scelerisque massa at eleifend. Ut maximus sapien ut justo consectetur, sed sagittis metus sagittis. Quisque odio massa, laoreet et odio a, dapibus venenatis risus. Etiam et quam ut velit ornare eleifend. Phasellus sed laoreet justo.</p>
+              <p>Donec sit amet leo id sapien iaculis elementum vel at risus. Sed semper, metus id ullamcorper auctor, lorem magna fringilla lectus, sed dapibus ante ipsum sed nunc. Sed tempus elementum bibendum. Quisque lectus nisi, placerat nec feugiat viverra, sagittis eget urna. Phasellus est nunc, scelerisque eget orci et, rutrum laoreet quam. Fusce in auctor magna. Ut accumsan eros sit amet augue viverra hendrerit. Nullam molestie quam vel nunc luctus, vel finibus urna condimentum. Quisque consectetur sem venenatis arcu maximus varius.</p>
+              <p>Aliquam non mi vitae ex tempus sollicitudin sed eu lectus. Integer sollicitudin lobortis purus convallis dapibus. Nam dictum mollis elit quis molestie. Proin eget ornare arcu. Etiam pharetra mattis vulputate. Nullam vel erat hendrerit, congue purus molestie, hendrerit massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed bibendum tellus odio, quis rutrum ligula volutpat sed. Donec vitae justo nec magna hendrerit ullamcorper sed at velit. Ut sapien nibh, consectetur vel convallis at, tristique et sem. Nam aliquet, purus ut pharetra hendrerit, nulla quam semper dui, non tempus mi elit et diam. Nam vel lacinia nulla. Fusce dolor enim, elementum eu turpis vel, tincidunt laoreet metus. Proin non porta augue. Nunc urna lorem, pretium id ex ut, rhoncus egestas orci.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="skills">
+              
+            </div>
+          </div>
+          <!-- End Content -->
+        </app-header>
+      </app-header-layout>
+    </app-drawer-layout>
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById("body").classList.add("show");
+      }
+    </script>
+  </body>
+</html>
