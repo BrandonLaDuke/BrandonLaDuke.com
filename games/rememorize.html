@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html style="background-color:#222;">
+  <head>
+    <meta charset="utf-8">
+    <title>Re: Memorize | Games | Brandon LaDuke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="import" href="/bower_components/polymer/polymer.html">
+    <link rel="import" href="/bower_components/app-layout/app-layout.html">
+    <link rel="import" href="/bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+    <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+    <link rel="icon" type="image/png" href="/images/bl-logo.png">
+
+    <meta property="og:url"           content="http://www.brandonladuke.com/games/rememorize.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Re: Memorize | Games | Brandon LaDuke" />
+    <meta property="og:description"   content="Re: Memorize is a Text-based cyberpunk adventure game. Featuring a complex story line, turn based battles, and decision making." />
+    <meta property="og:image"         content="http://www.brandonladuke.com/images/games/rememorize/rememorize-banner-fb.jpg" />
+
+    <!-- Twitter -->
+  <meta content="summary" property="twitter:card">
+  <meta content="http://www.brandonladuke.com/games/rememorize.html" property="twitter:url">
+  <meta content="Re: Memorize | Games | Brandon LaDuke" property="twitter:title">
+  <meta content="Re: Memorize is a Text-based cyberpunk adventure game. Featuring a complex story line, turn based battles, and decision making." property="twitter:description">
+  <meta content="http://www.brandonladuke.com/images/games/rememorize/rememorize-banner-fb.jpg" property="twitter:image">
+  <meta content="@BrandonLaDuke" property="twitter:site">
+ <meta content="@BrandonLaDuke" property="twitter:creator">
+
+    <script>
+      // load webcomponents polyfills
+      (function() {
+        if ('registerElement' in document
+            && 'import' in document.createElement('link')
+            && 'content' in document.createElement('template')) {
+          // browser has web components
+        } else {
+          // polyfill web components
+          var e = document.createElement('script');
+          e.src = '/bower_components/webcomponentsjs/webcomponents-lite.min.js';
+          document.head.appendChild(e);
+        }
+      })();
+      console.log("Web components ready!");
+    </script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+    /*:root {
+      --toolbar-color: #03da00;
+      --toolbar-link-color: #02ab07;
+    }*/
+    </style>
+  </head>
+  <body id="body" class="">
+    <app-drawer-layout force-narrow fullbleed>
+      <app-drawer swipe-open>
+        <app-toolbar>Menu</app-toolbar>
+        <a href="/about.html">About</a>
+        <a href="/web.html">Web</a>
+        <a href="/games.html">Games</a>
+        <a href="/video.html">Video</a>
+        <a href="/photography.html">Photography</a>
+        <a href="http://blog.brandonladuke.com">Blog</a>
+      </app-drawer>
+      <app-header-layout has-scrolling-region>
+        <app-header condenses reveals effects="waterfall">
+          <app-toolbar>
+            <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+            <div title><a href="/">Brandon LaDuke</a></div>
+            <div pages spacer>
+              <a href="/about.html">About</a>
+              <a href="/web.html">Web</a>
+              <a href="/games.html">Games</a>
+              <a href="/video.html">Video</a>
+              <a href="/photography.html">Photography</a>
+              <a href="http://blog.brandonladuke.com">Blog</a>
+            </div>
+          </app-toolbar>
+          <!-- Start Content -->
+
+          <img width="100%" src="/images/games/rememorize/rememorize-banner.jpg"/>
+          <div class="container-l flex-view game">
+            <div class="gameInfo">
+              <!-- /files/games/Re-Memorize/Re-Memorize-Beta-v1.exe -->
+              <a href="#" class="download-btn" ><!-- add "download" -->
+                Beta Coming Soon<br>14 March, 2017
+              </a>
+              <h2>Platforms:</h2>
+              <p>PC</p>
+              <h2>Programming Languages:</h2>
+              <p>Visual Basic</p>
+              <h2>Source</h2>
+              <p><a href="https://github.com/BrandonLaDuke/Re-Memorize">GitHub</a></p>
+              <br>
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- BrandonLaDuke.com -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-8458877549325827"
+                   data-ad-slot="7968753391"
+                   data-ad-format="auto"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <div class="aboutGame container-l">
+              <h1>Re: Memorize</h1>
+              <p>Re: Memorize is a Text-based cyberpunk adventure game. Featuring a complex story line, turn based battles, and decision making.</p>
+              <p>Inspired by Dontnod Entertainment's "Remember Me" with some concepts from Triangle Staff's "Serial Experiments Lain".</p>
+              <p>Re: Memorize puts you in the role of a unique memory hunter who has the power to remix human memories without the need for any type of device. Until your memory was wiped. Now you have to battle your way into the Memorize HQ and find out what is going on. Following on from a few years after the events of Remember Me, the Leaper threat is back and it's up to you to remember who you were and unravel the secrets behind the Memorize network.</p>
+              <h2>Installation Instructions</h2>
+              <ol>
+                <li>Download the game</li>
+                <li>If it does not download does not succeed tell the browser to keep it anyway.</li>
+                <li>Run: Re-Memorize.exe</li>
+              </ol>
+              <h2>Screenshots</h2>
+              <a href="/images/games/rememorize/rememorize-screen1.png"><img width="25%" src="/images/games/rememorize/rememorize-screen1.png" alt="Screenshot of Re: memorize 1" /></a>
+              <a href="/images/games/rememorize/rememorize-screen2.jpg"><img width="25%" src="/images/games/rememorize/rememorize-screen2.jpg" alt="Screenshot of Re: memorize 2" /></a>
+              <a href="/images/games/rememorize/rememorize-screen3.jpg"><img width="25%" src="/images/games/rememorize/rememorize-screen3.jpg" alt="Screenshot of Re: memorize 3" /></a>
+              <h2>References</h2>
+              <ul>
+                <li><a href="http://www.remembermegame.com">Remember Me</a> is a cyberpunk action-adventure video game developed by Dontnod Entertainment and published by Capcom in 2013 for PS3, XBox 360 and PC.</li>
+                <li><a href="https://www.funimation.com/shows/serial-experiments-lain">Serial Experiments Lain</a> is a 13 Episode avant-garde anime series directed by Ryūtarō Nakamura, with character design by Yoshitoshi ABe, screenplay written by Chiaki J. Konaka, and produced by Yasuyuki Ueda for Triangle Staff in 1998.</li>
+              </ul>
+              <br>
+              <div id="disqus_thread"></div>
+                <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://brandonladuke-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+            </div>
+          </div>
+          <!-- End Content -->
+          <footer>
+            <div class="flex container-l">
+              <div class="logo">
+                <img src="/images/logo.svg" alt="Brandon LaDuke Logo">
+              </div>
+              <div class="text">
+                <p>&copy; <script>
+                var d=new Date();
+                yr=d.getFullYear();
+                document.write(yr);</script> Brandon LaDuke</p>
+              </div>
+              <div class="social flex">
+                  <div gPlus style="width:50px">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #dd4e41;
+                            stroke: #dd4e41;
+                          }
+
+                          .cls-1, .cls-2, .cls-3 {
+                            stroke-miterlimit: 10;
+                          }
+
+                          .cls-2 {
+                            font-size: 507.68px;
+                            stroke-width: 23px;
+                          }
+
+                          .cls-2, .cls-3 {
+                            fill: #fff;
+                            stroke: #fff;
+                            font-family: ProductSans-Regular, Product Sans;
+                          }
+
+                          .cls-3 {
+                            font-size: 496.43px;
+                            stroke-width: 28px;
+                          }
+                        </style>
+                      </defs>
+                      <g id="tEXT">
+                        <circle class="cls-1" cx="500" cy="500" r="482.63"/>
+                      </g>
+                      <g id="Layer_1" data-name="Layer 1">
+                        <text class="cls-2" transform="translate(575.25 646.9)">+</text>
+                        <text class="cls-3" transform="translate(139.58 689.68)">G</text>
+                      </g>
+                    </svg>
+
+
+                  </div>
+                  <div twitter style="width:50px">
+                    <img src="/icons/Twitter.png" style="width:100%" alt="Twitter"/>
+                  </div>
+                  <div linkedIn style="width:50px">
+                      <img src="/icons/linkedin.png" style="width:100%" alt="Linked In"/>
+                  </div>
+                  <div gitHub style="width:50px">
+                    <img src="/icons/github.png" style="width:100%" alt="GitHub"/>
+                  </div>
+              </div>
+            </div>
+          </footer>
+        </app-header>
+      </app-header-layout>
+    </app-drawer-layout>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66276915-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById("body").classList.add("show");
+      }
+    </script>
+  </body>
+</html>

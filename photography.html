@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html style="background-color:#222;">
+  <head>
+    <meta charset="utf-8">
+    <title>Brandon LaDuke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="bower_components/app-layout/app-layout.html">
+    <link rel="import" href="bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+    <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+    <link rel="icon" type="image/png" href="/images/bl-logo.png" />
+    <script>
+      // load webcomponents polyfills
+      (function() {
+        if ('registerElement' in document
+            && 'import' in document.createElement('link')
+            && 'content' in document.createElement('template')) {
+          // browser has web components
+        } else {
+          // polyfill web components
+          var e = document.createElement('script');
+          e.src = '/bower_components/webcomponentsjs/webcomponents-lite.min.js';
+          document.head.appendChild(e);
+        }
+      })();
+      console.log("Web components ready!");
+    </script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    /*:root {
+      --toolbar-color: #03da00;
+      --toolbar-link-color: #02ab07;
+    }*/
+    </style>
+  </head>
+  <body id="body" class="">
+    <app-drawer-layout force-narrow fullbleed>
+      <app-drawer swipe-open>
+        <app-toolbar>Menu</app-toolbar>
+        <a href="about.html">About</a>
+        <a href="web.html">Web</a>
+        <a href="games.html">Games</a>
+        <a href="video.html">Video</a>
+        <a href="photography.html">Photography</a>
+        <a href="http://blog.brandonladuke.com">Blog</a>
+      </app-drawer>
+      <app-header-layout has-scrolling-region>
+        <app-header condenses reveals effects="waterfall">
+          <app-toolbar>
+            <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+            <div title><a href="/">Brandon LaDuke</a></div>
+            <div pages spacer>
+              <a href="about.html">About</a>
+              <a href="web.html">Web</a>
+              <a href="games.html">Games</a>
+              <a href="video.html">Video</a>
+              <a href="photography.html">Photography</a>
+              <a href="http://blog.brandonladuke.com">Blog</a>
+            </div>
+          </app-toolbar>
+          <!-- Start Content -->
+
+          <header>
+            <div class="aboutHeader">
+              <h1>Photography</h1>
+            </div>
+          </header>
+          <div class="portfolio container-photo flex">
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6376600345972639346">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/iU3GHkTGbPpA3lDjI4rPNV_IqG_CY5xk9bl4M2jk3qF-g-nMTMZTj1tcfcjO8vZgKggLtDouab3_KYI=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6368556866929077378">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/hwTuzkofLyhNstVFnU7LeiHAF7OuGswhAIXgzQDC35TSsaOPcXiBQ6N2tab5G48qciruYdNwk0p34W0=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6368328272622235250">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/UDoRvfTN2lhs66x6ViR5rr3cbwdBDk9r4dgP1dk0ADf4M1VEA4A7H1od1KyP6_f4E8B9GcYhqaeY1SA=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6329241783195425074">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/oeap9enKl5SGP_xVACJBg69LTIpZ_KP1j7JrrVkUftjCzJNxmxAU_AkeDiab1i2lKsyWacVM8FkBEc8=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6324266848909395458">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/7ofd2li105Y9QBjGtq706wY_OA90W7qVcTeHS2RKm61PL04CMRhhP0pOGg8fUmIjKb1_YOpl8dq5HlE=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6325117270260759138">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/qPJY-gCORUD3ajurU8HnNFL1-GwgG_K7aM-FHmMXccZSNG7rIWc-ofLygkgkLEHH5jGcwL4TO7lHs5Q=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6312200497755199410">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/xTS3WxP5hvlWptg4SS-nsv5YvJYPhZbaZ_9x1N0kvw8qOMycp6nnNMibXwbAN3sU3i_f68sw0JtjdLo=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6300269414236495202">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/SwGqZLVJ8ej5Z5BKAdB9Ml7g4v_GXLE-G1QH8tThBDXbDioAUVMii5SJyYP5f_8zEbIYuhItVyxtjzs=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6312515520849891698">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/P0h7SwoNJ1fHWnpzoqONiQOM4kdLlrMb53l8ABIrIoiwfbi4nYNqgN6uA2hen1tj1O05QxNtzzGWI1E=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6290551115415538642">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/Wo0P3HiPupR_47MUz0wOoBay45zdCRcwiEuQIZS0hpe0VU_lV4gPHIpLQDO0aBJUM9qopbjqW0BJPFo=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6293793924316698482">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/X3A1we319wZP1usQLrRWbbZUah11EhvG9feL5luX5vmcaQ5x0zQSbhxnnDDVn6hqmnHQDXP_xSUjZ5w=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6287105426748341778">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/HDyBFRYbHhNZP4UPB6mvrvlTW-3G77PFn7Xbj7BpG6RtsFA6PFKEKeF7bT2cZbsbLIAKra3pjmSJVjc=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6283748522275364626">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/5GCmG-1xL6Yr5GYzkYWQLgHqhMklIA6bfY5Gbk-x8zX15bZCJ4qOHricuv9cKeTfsYALp2bNml8i8ME=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6282597219794886226">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/vVuFMOhSF77K9M-cUwow2x1w8xuW1ISS-vKQE7V4dgjCo24WR9DYk6eNkqpcHyeZ7weBhWcZSKu0rgk=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6263002615996738722">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/6P1cNtWauNE8hfM6WrlNN6pQJudPXpnwDe9EN_F6P3E5DoIpKIcwXgGHvlo5KW6XXWx6YbZZxTku_F8=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="https://plus.google.com/u/0/photos/photo/106122929695445800262/6270561008479265154">
+                <div class="Img" style="background-image:url(https://lh3.googleusercontent.com/or1PzIuZ1jagTWoT2lnGyw4SyAbBmOoDDJwAcrJem79OSn4TNnK25tBfZS-77rdfLCoiAiQumv53oPU=w1600-h900-rw-no)"></div>
+              </a>
+            </div>
+          </div>
+          <!-- End Content -->
+          <footer>
+            <div class="flex container-l">
+              <div class="logo">
+                <img src="/images/logo.svg" alt="Brandon LaDuke Logo">
+              </div>
+              <div class="text">
+                <p>&copy; <script>
+                var d=new Date();
+                yr=d.getFullYear();
+                document.write(yr);</script> Brandon LaDuke</p>
+              </div>
+              <div class="social flex">
+                  <div gPlus style="width:50px">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #dd4e41;
+                            stroke: #dd4e41;
+                          }
+
+                          .cls-1, .cls-2, .cls-3 {
+                            stroke-miterlimit: 10;
+                          }
+
+                          .cls-2 {
+                            font-size: 507.68px;
+                            stroke-width: 23px;
+                          }
+
+                          .cls-2, .cls-3 {
+                            fill: #fff;
+                            stroke: #fff;
+                            font-family: ProductSans-Regular, Product Sans;
+                          }
+
+                          .cls-3 {
+                            font-size: 496.43px;
+                            stroke-width: 28px;
+                          }
+                        </style>
+                      </defs>
+                      <g id="tEXT">
+                        <circle class="cls-1" cx="500" cy="500" r="482.63"/>
+                      </g>
+                      <g id="Layer_1" data-name="Layer 1">
+                        <text class="cls-2" transform="translate(575.25 646.9)">+</text>
+                        <text class="cls-3" transform="translate(139.58 689.68)">G</text>
+                      </g>
+                    </svg>
+
+
+                  </div>
+                  <div twitter style="width:50px">
+                    <img src="/icons/Twitter.png" style="width:100%" alt="Twitter"/>
+                  </div>
+                  <div linkedIn style="width:50px">
+                      <img src="/icons/linkedin.png" style="width:100%" alt="Linked In"/>
+                  </div>
+                  <div gitHub style="width:50px">
+                    <img src="/icons/github.png" style="width:100%" alt="GitHub"/>
+                  </div>
+              </div>
+            </div>
+          </footer>
+        </app-header>
+      </app-header-layout>
+    </app-drawer-layout>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66276915-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById("body").classList.add("show");
+      }
+    </script>
+  </body>
+</html>

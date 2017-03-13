@@ -131,7 +131,7 @@ header #Logo {
   }
   header [heading] {
     flex: 2;
-    margin-top:70px;
+    margin-top: 48px;
   }
   header [heading] h1 {
     font-size:2.5em;
@@ -160,28 +160,89 @@ header #Logo {
   }
 }
 
+[social-icons] {
+  display:flex;
+  max-width:250px;
+  margin:5px auto;
+}
+[social-icons] div {
+  flex:1;
+  padding:5px;
+}
+@media screen and (min-width:900px) {
+  [social-icons] {
+  display:flex;
+  max-width:250px;
+  margin:0;
+}
+}
+[features] a {
+    color: #fff;
+    text-decoration: none;
+}
+[features] {
+  margin-top:30px;
+}
+[feature] {
+  height: 50vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-size: 1em;
+  text-shadow:2px 2px 2px black;
+  background-position:center;
+  background-size:cover;
+}
+@media screen and (min-width:570px) {
+  [feature] {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width:1000px) {
+  [feature] {
+    font-size: 1.6em;
+  }
+}
+
 /* About Page Styles*/
 
 .aboutHeader {
-  height: 50vh;
+  height: 35vh;
   margin: 0;
 
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, red , yellow);
+  /* Verticaly and horizontally center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+   /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(bottom, #0005c2 , #00b9ff); */ /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom, #0005c2 , #00b9ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom, #0005c2 , #00b9ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #0005c2 , #00b9ff);
 }
 
 .aboutHeader h1 {
   margin: 0;
-  padding-top:130px;
-  text-align:center;
-  vertical-align:middle;
+  display: block;
   font-size:3em;
   text-shadow: .1em .1em .1em black;
 }
 
+.pic img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px auto auto auto;
+  display: block;
+}
+.portfolio {
+  display:flex;
+  flex-wrap: wrap;
+}
+.portfolio .card {
+  text-align:center;
+}
 /* Bio - About Page */
 
 .card {
@@ -192,8 +253,142 @@ header #Logo {
   padding:1em;
 }
 
-/* Skills - About Page */
+.bio p {
+  margin-top:0;
+}
 
-.skills {
-  
+.container {
+  max-width:800px;
+  margin: auto;
+}
+.container-l {
+  max-width: 1200px;
+  margin: auto;
+}
+.container-photo {
+  max-width: 1486px;
+  margin: auto;
+}
+
+
+@media screen and (min-width:800px) {
+  .card {
+    margin:20px auto auto auto;
+  }
+}
+
+/* Skills - About Page */
+.skillsTitle {
+  text-align:center;
+}
+.skills {flex: 1 2 4;font-size: xx-small;min-width:25%;}
+
+/* Web */
+.portfolio {
+  margin-top: 10px;
+}
+.portfolio .card {
+  flex:1 1 auto;
+  min-width: 300px;
+  max-width: 350px;
+  padding: 0;
+  margin: 10px auto;
+}
+.portfolio .webImg {
+  width: 100%;
+  height:150px;
+  background-size: cover;
+  background-position: center;
+}
+.portfolio a {
+  color: aquamarine;
+}
+
+.flex-view {
+  display: flex;
+}
+
+/* Photography */
+.card .Img {
+  flex: 1;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  margin:0 auto;
+  padding: 20px;
+}
+
+footer .logo {
+  width: 100px;
+  text-align:center;
+  margin: auto;
+}
+footer .social {
+  display:flex;
+  max-width:250px;
+  margin:auto;
+}
+.social div {
+  flex:1;
+  padding:5px;
+}
+footer .text {
+  text-align:center;
+}
+
+/* Games */
+
+.game {
+  margin-top: 20px;
+}
+.gameInfo {
+  box-shadow: 0em .2em .5em rgba(0,0,0,0.4);
+  width: 100%;
+  flex:1;
+  text-align: left;
+  padding: 10px;
+  background-color: #333333;
+}
+.aboutGame {
+  flex:4;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+.aboutGame h1 {
+  margin: 0;
+}
+.gameInfo .download-btn {
+  padding: 20px;
+  background-color: #0d840d;
+  color:#fff;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.gameInfo a {
+  color:lightblue;
+}
+.gameInfo p a:hover {
+  color:#0f0;
+}
+.download-btn:hover {
+  background-color: #00d200;
+  color:#fff;
+}
+@media screen and (max-width: 500px) {
+  .game {
+    flex-direction: column-reverse;
+  }
+  .gameInfo {
+    margin-top: 20px;
+    box-shadow: none;
+    width: calc(100% - 20px);
+  }
 }
