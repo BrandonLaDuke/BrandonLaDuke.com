@@ -2,3 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/dladuke1/public_html/brandonladuke.com
+    - /bin/cp -R app $DEPLOYPATH
