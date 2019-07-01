@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Libary 3 AM";
+  src: url("/fonts/Library 3 am.otf") format("truetype");
+}
+body
+{
+  margin: 0;
+  background:#fff;
+  overflow: hidden;
+}
+#hidden-shim {
+  background-color: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  animation-name: reveal;
+  animation-duration: 2s;
+  animation-delay: 6.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes reveal {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  99% {
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    top: -100%
+  }
+}
+
+#text
+{
+  transform:translateY(-50%);
+  top:50%;
+  text-align:center;
+  width:100%;
+  position:absolute;
+  color:rgba(255,255,255,0.5);
+  font-family:"Libary 3 AM";
+  font-weight:100;
+  font-size:45px;
+  letter-spacing:1.2em;
+  animation-name: zoom;
+  animation-fill-mode:forwards;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  
+}
+#text2
+{
+
+  opacity: 0;
+  transform:translateY(-50%);
+  top:50%;
+  text-align:center;
+  width:100%;
+  position:absolute;
+  color:rgba(255,255,255,0.5);
+  font-family:"Libary 3 AM";
+  font-weight:100;
+  font-size:45px;
+  letter-spacing:1em;
+  animation-name: zoom;
+  animation-delay: 5s;
+  animation-fill-mode:forwards;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+}
+@keyframes zoom {
+  0% {
+    opacity:0;
+    transform:scale(0.5) translateY(-40%);
+    -webkit-filter:blur(10px);
+    letter-spacing: 1em;
+  }
+  50% {
+    opacity:1;
+  }
+  70% {
+   opacity:1; transform:scale(1) translateY(-50%);
+   letter-spacing: 1.2em;
+    -webkit-filter:none;
+  }
+  100% {
+    opacity:0; transform:scale(1) translateY(-50%);
+    letter-spacing: 1.7em;
+     -webkit-filter:blur 5px;
+     display: none;
+  }
+
+}
